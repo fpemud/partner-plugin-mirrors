@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILES="$(find ./mirrors -name '*.py' | tr '\n' ' ')"
+FILES="$(find ./reflex -name '*.py' | tr '\n' ' ')"
 ERRFLAG=0
 
 OUTPUT=`pyflakes ${FILES} 2>&1`
